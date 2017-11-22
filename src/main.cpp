@@ -1,25 +1,18 @@
 #include <stdio.h>
 
-
+#include <vector>
 #include <functional>
 #include <memory>
 #include <cstdlib>
+#include <iostream>
 #include <string>
+
+#include "../include/array.h"
+#include "../include/menu.h"
 
 int main(int argc, char* argv[]) {
 
-    std::unique_ptr< std::function<void()> > functor( 
-        new std::function<void()>( [&](void){
-            printf("Hello world\n");
-        })
-    );
+  sort_search::menu();
 
-    auto functor1 =  [](void) {
-        printf("Hello world!\n");
-    };
-
-    (*functor)();
-    functor1();
-
-    return 0;
-} 
+  return 0;
+}

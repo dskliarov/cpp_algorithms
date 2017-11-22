@@ -120,21 +120,170 @@ cpp_algorithms: cmake_check_build_system
 
 # fast build rule for target.
 cpp_algorithms/fast:
-	$(MAKE) -f src/CMakeFiles/cpp_algorithms.dir/build.make src/CMakeFiles/cpp_algorithms.dir/build
+	$(MAKE) -f CMakeFiles/cpp_algorithms.dir/build.make CMakeFiles/cpp_algorithms.dir/build
 .PHONY : cpp_algorithms/fast
 
-#=============================================================================
-# Target rules for targets named cpp_skell
+src/array.o: src/array.cpp.o
 
-# Build rule for target.
-cpp_skell: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cpp_skell
-.PHONY : cpp_skell
+.PHONY : src/array.o
 
-# fast build rule for target.
-cpp_skell/fast:
-	$(MAKE) -f lib/CMakeFiles/cpp_skell.dir/build.make lib/CMakeFiles/cpp_skell.dir/build
-.PHONY : cpp_skell/fast
+# target to build an object file
+src/array.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp_algorithms.dir/build.make CMakeFiles/cpp_algorithms.dir/src/array.cpp.o
+.PHONY : src/array.cpp.o
+
+src/array.i: src/array.cpp.i
+
+.PHONY : src/array.i
+
+# target to preprocess a source file
+src/array.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp_algorithms.dir/build.make CMakeFiles/cpp_algorithms.dir/src/array.cpp.i
+.PHONY : src/array.cpp.i
+
+src/array.s: src/array.cpp.s
+
+.PHONY : src/array.s
+
+# target to generate assembly for a file
+src/array.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp_algorithms.dir/build.make CMakeFiles/cpp_algorithms.dir/src/array.cpp.s
+.PHONY : src/array.cpp.s
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp_algorithms.dir/build.make CMakeFiles/cpp_algorithms.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp_algorithms.dir/build.make CMakeFiles/cpp_algorithms.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp_algorithms.dir/build.make CMakeFiles/cpp_algorithms.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+src/menu.o: src/menu.cpp.o
+
+.PHONY : src/menu.o
+
+# target to build an object file
+src/menu.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp_algorithms.dir/build.make CMakeFiles/cpp_algorithms.dir/src/menu.cpp.o
+.PHONY : src/menu.cpp.o
+
+src/menu.i: src/menu.cpp.i
+
+.PHONY : src/menu.i
+
+# target to preprocess a source file
+src/menu.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp_algorithms.dir/build.make CMakeFiles/cpp_algorithms.dir/src/menu.cpp.i
+.PHONY : src/menu.cpp.i
+
+src/menu.s: src/menu.cpp.s
+
+.PHONY : src/menu.s
+
+# target to generate assembly for a file
+src/menu.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp_algorithms.dir/build.make CMakeFiles/cpp_algorithms.dir/src/menu.cpp.s
+.PHONY : src/menu.cpp.s
+
+src/sorting/quick_sort.o: src/sorting/quick_sort.cpp.o
+
+.PHONY : src/sorting/quick_sort.o
+
+# target to build an object file
+src/sorting/quick_sort.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp_algorithms.dir/build.make CMakeFiles/cpp_algorithms.dir/src/sorting/quick_sort.cpp.o
+.PHONY : src/sorting/quick_sort.cpp.o
+
+src/sorting/quick_sort.i: src/sorting/quick_sort.cpp.i
+
+.PHONY : src/sorting/quick_sort.i
+
+# target to preprocess a source file
+src/sorting/quick_sort.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp_algorithms.dir/build.make CMakeFiles/cpp_algorithms.dir/src/sorting/quick_sort.cpp.i
+.PHONY : src/sorting/quick_sort.cpp.i
+
+src/sorting/quick_sort.s: src/sorting/quick_sort.cpp.s
+
+.PHONY : src/sorting/quick_sort.s
+
+# target to generate assembly for a file
+src/sorting/quick_sort.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp_algorithms.dir/build.make CMakeFiles/cpp_algorithms.dir/src/sorting/quick_sort.cpp.s
+.PHONY : src/sorting/quick_sort.cpp.s
+
+src/sorting/sort.o: src/sorting/sort.cpp.o
+
+.PHONY : src/sorting/sort.o
+
+# target to build an object file
+src/sorting/sort.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp_algorithms.dir/build.make CMakeFiles/cpp_algorithms.dir/src/sorting/sort.cpp.o
+.PHONY : src/sorting/sort.cpp.o
+
+src/sorting/sort.i: src/sorting/sort.cpp.i
+
+.PHONY : src/sorting/sort.i
+
+# target to preprocess a source file
+src/sorting/sort.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp_algorithms.dir/build.make CMakeFiles/cpp_algorithms.dir/src/sorting/sort.cpp.i
+.PHONY : src/sorting/sort.cpp.i
+
+src/sorting/sort.s: src/sorting/sort.cpp.s
+
+.PHONY : src/sorting/sort.s
+
+# target to generate assembly for a file
+src/sorting/sort.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp_algorithms.dir/build.make CMakeFiles/cpp_algorithms.dir/src/sorting/sort.cpp.s
+.PHONY : src/sorting/sort.cpp.s
+
+src/utility.o: src/utility.cpp.o
+
+.PHONY : src/utility.o
+
+# target to build an object file
+src/utility.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp_algorithms.dir/build.make CMakeFiles/cpp_algorithms.dir/src/utility.cpp.o
+.PHONY : src/utility.cpp.o
+
+src/utility.i: src/utility.cpp.i
+
+.PHONY : src/utility.i
+
+# target to preprocess a source file
+src/utility.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp_algorithms.dir/build.make CMakeFiles/cpp_algorithms.dir/src/utility.cpp.i
+.PHONY : src/utility.cpp.i
+
+src/utility.s: src/utility.cpp.s
+
+.PHONY : src/utility.s
+
+# target to generate assembly for a file
+src/utility.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp_algorithms.dir/build.make CMakeFiles/cpp_algorithms.dir/src/utility.cpp.s
+.PHONY : src/utility.cpp.s
 
 # Help Target
 help:
@@ -145,7 +294,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cpp_algorithms"
-	@echo "... cpp_skell"
+	@echo "... src/array.o"
+	@echo "... src/array.i"
+	@echo "... src/array.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/menu.o"
+	@echo "... src/menu.i"
+	@echo "... src/menu.s"
+	@echo "... src/sorting/quick_sort.o"
+	@echo "... src/sorting/quick_sort.i"
+	@echo "... src/sorting/quick_sort.s"
+	@echo "... src/sorting/sort.o"
+	@echo "... src/sorting/sort.i"
+	@echo "... src/sorting/sort.s"
+	@echo "... src/utility.o"
+	@echo "... src/utility.i"
+	@echo "... src/utility.s"
 .PHONY : help
 
 
