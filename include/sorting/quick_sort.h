@@ -5,8 +5,12 @@ namespace sort_search {
 
   using namespace std;
 
-  void simple_quicksort(vector<int>& a, int l, int r);
+  void simple_quicksort(vector<int>& a);
 
+  template <typename RandomIter>
+  void stl_quicksort(RandomIter first, RandomIter last);
+
+  void stl_quicksort(vector<int>& a);
 }
 
 #endif

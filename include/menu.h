@@ -7,7 +7,7 @@
 
 #define EXIT_FROM_MENU 9
 
-#define CHANGE_ARRAY_SIZE 2
+#define CHANGE_ARRAY_SIZE 5
 
 #define SIMPLE_QUICKSORT 1
 #define STL_QUICKSORT 2
@@ -21,10 +21,6 @@ namespace sort_search {
   int main_menu();
 
   int sorting_menu(int * array_size);
-
-  void handle_quicksort(int * array_size);
-
-  void handle_change_array_size(int * array_size);
 
   int searching_menu();
 }

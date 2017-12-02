@@ -65,8 +65,12 @@ string
 /Users/dskliarov/cpp_projects/cpp_algorithms/src/sorting/quick_sort.cpp
 vector
 -
+iostream
+-
 ../include/sorting/quick_sort.h
 /Users/dskliarov/cpp_projects/cpp_algorithms/src/include/sorting/quick_sort.h
+algorithm
+-
 
 /Users/dskliarov/cpp_projects/cpp_algorithms/src/sorting/sort.cpp
 vector
@@ -76,6 +80,8 @@ algorithm
 iterator
 -
 iostream
+-
+algorithm
 -
 ../include/sorting/sort.h
 /Users/dskliarov/cpp_projects/cpp_algorithms/src/include/sorting/sort.h

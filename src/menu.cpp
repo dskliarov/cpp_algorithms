@@ -54,43 +54,11 @@ namespace sort_search {
     return input;
   }
 
-  int sorting_menu(int * array_size) {
-    char esc_char = 27;
-    cout << esc_char << "[1m" << "Sorting menu" << esc_char << "[0m" << endl;
-    cout << "============" << endl;
-    cout << endl;
-    cout << "1. Quicksort" << endl;
-    cout << "2. Change Array Size" << endl;
-    cout << endl;
-    cout << "-----------------------" << endl;
-    cout << "0. Main menu" << endl;
-    cout << "9. Exit" << endl;
-    int input = SORTING_MENU;
-    cin >> input;
-    switch(input) {
-    case SIMPLE_QUICKSORT:
-      handle_quicksort(array_size);
-      input = SORTING_MENU;
-      break;
-    case CHANGE_ARRAY_SIZE:
-      handle_change_array_size(array_size);
-      input = SORTING_MENU;
-      break;
-    case MAIN_MENU:
-      input = MAIN_MENU;
-      break;
-    case EXIT_FROM_MENU:
-      input = EXIT_FROM_MENU;
-      break;
-    }
-    return input;
-  }
-
-  void handle_quicksort(int * array_size) {
+  void handle_quicksort(int * array_size, int algorithm) {
     cout << "\x1B[2J\x1B[H";
     vector<int> array;
     sort_search::generate_array(array, *array_size, RANDOM_ORDER);
-    sort_search::algorithm_sort(array, SIMPLE_QUICKSORT_ALG);
+    sort_search::algorithm_sort(array, algorithm);
   }
 
   void handle_change_array_size(int *array_size) {
@@ -110,6 +78,43 @@ namespace sort_search {
     if(input > 0){
       *array_size = input;
     }
+  }
+
+  int sorting_menu(int * array_size) {
+    char esc_char = 27;
+    cout << esc_char << "[1m" << "Sorting menu" << esc_char << "[0m" << endl;
+    cout << "============" << endl;
+    cout << endl;
+    cout << SIMPLE_QUICKSORT << ". Quicksort" << endl;
+    cout << STL_QUICKSORT << ". Stl Quicksort" << endl;
+    cout << CHANGE_ARRAY_SIZE << ". Change Array Size" << endl;
+    cout << endl;
+    cout << "-----------------------" << endl;
+    cout << "0. Main menu" << endl;
+    cout << "9. Exit" << endl;
+    int input = SORTING_MENU;
+    cin >> input;
+    switch(input) {
+    case SIMPLE_QUICKSORT:
+      handle_quicksort(array_size, SIMPLE_QUICKSORT_ALG);
+      input = SORTING_MENU;
+      break;
+    case STL_QUICKSORT:
+      handle_quicksort(array_size, STL_QUICKSORT_ALG);
+      input = SORTING_MENU;
+      break;
+    case CHANGE_ARRAY_SIZE:
+      handle_change_array_size(array_size);
+      input = SORTING_MENU;
+      break;
+    case MAIN_MENU:
+      input = MAIN_MENU;
+      break;
+    case EXIT_FROM_MENU:
+      input = EXIT_FROM_MENU;
+      break;
+    }
+    return input;
   }
 
   int searching_menu() {
