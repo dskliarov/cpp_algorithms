@@ -55,13 +55,13 @@ namespace sort_search {
   //----------------------------------------------------------
 
   template <typename Iter>
-  void stl_quicksort(Iter first, Iter last) {
+  void stl_quicksort(Iter first, Iter last, vector<int>& a) {
     Iter left = first;
     Iter right = last;
     Iter pivot = left ++;
     if(first != last) {
       while(left != right) {
-        if(*left < *pivot) {
+        if(*left <= *pivot) {
           ++left;
         }
         else {
@@ -71,17 +71,17 @@ namespace sort_search {
           std::iter_swap(left, right);
         }
       }
-      left --;
-      std::iter_swap(left, pivot);
-      stl_quicksort(first, left);
-      stl_quicksort(right, last);
+      --left;
+      std::iter_swap(pivot, left);
+      stl_quicksort(first, left, a);
+      stl_quicksort(right, last, a);
     }
   }
 
   void stl_quicksort(vector<int>& a) {
     vector<int>::iterator first = a.begin();
-    vector<int>::iterator last = a.end() - 1;
-    stl_quicksort(first, last);
+    vector<int>::iterator last = a.end();
+    stl_quicksort(first, last, a);
   }
 
 }

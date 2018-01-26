@@ -10,8 +10,8 @@ namespace sort_search {
   using namespace std;
 
   void menu() {
-    int input = MAIN_MENU;
-    int array_size = 200;
+    int input = SORTING_MENU;
+    int array_size = 5;
     while (input != EXIT_FROM_MENU) {
       std::cout << "\x1B[2J\x1B[H";
       switch(input) {
@@ -92,8 +92,9 @@ namespace sort_search {
     cout << "-----------------------" << endl;
     cout << "0. Main menu" << endl;
     cout << "9. Exit" << endl;
-    int input = SORTING_MENU;
+    int input = MAIN_MENU;
     cin >> input;
+    //input = STL_QUICKSORT;
     switch(input) {
     case SIMPLE_QUICKSORT:
       handle_quicksort(array_size, SIMPLE_QUICKSORT_ALG);
@@ -126,7 +127,7 @@ namespace sort_search {
     std::cout << "0. Main menu" << std::endl;
     std::cout << "9. Exit" << std::endl;
     int input = 9;
-    std::cin >> input;
+    cin >> input;
     switch(input) {
     case MAIN_MENU:
       input = MAIN_MENU;
